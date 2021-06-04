@@ -1,0 +1,110 @@
+body {
+    background-color: #222831;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.carousel-inner {
+
+}
+
+.carousel-item {
+    height: 45rem;
+    max-width: 80rem;
+    background-color: #393e46;
+    color: #eeeeee;
+    margin: auto;
+
+}
+
+.carousel-item img {
+    height: 100%;
+}
+
+h5 {
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    top: -480px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    position: relative;
+    top: -480px;
+
+}
+
+img {
+    opacity: 50%;
+    margin: auto;
+}
+
+.benefits {
+    padding: 5% 10%;
+
+}
+
+.carousel-indicators button{
+    padding-right: 3%;
+    margin: 1%;
+    border: none;
+    opacity: 30%;
+}
+
+.benefit-text {
+
+}
+
+.description {
+
+}
+
+.benefit-image {
+
+}
+
+.car-button {
+    background-color: transparent;
+    border: none;
+}
+
+@media (max-width: 1024px) {
+    .benefits {
+        padding: 5% 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 27rem;
+    }
+    h5 {
+        top: -200px;
+        font-size: 38px;
+    }
+    p {
+        top: -200px;
+    }
+}
+
+@media (max-width: 425px) {
+    .carousel-item {
+        height: 17rem;
+
+    }
+    h5 {
+        top: -40px;
+        font-size: 25px;
+
+    }
+    p {
+        top: -40px;
+        font-size: 16px ;
+    }
+    .benefit-image btn {
+        font-size:11px;
+        padding:4px 6px;
+    }
+}
