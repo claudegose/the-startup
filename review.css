@@ -1,0 +1,14 @@
+/*Color scheme used: #00adb5 blue  #222831 darkgrey #343a40 lighter gray */
+
+body {
+    display: flex;
+    justify-self: center;
+}
+
+.row {
+    background-color: #222831; /*grey suggested by Ewelyna*/
+}
+
+.col-sm-12 { /*Header and Footer*/
+    background-color: #343a40; /*about the same grey as navbar according GIMP*/ 
+}
