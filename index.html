@@ -35,6 +35,9 @@
             <a class="nav-link" href="benefits.html">About</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="generator.html">Watch now</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="loginform.html">Log in</a>
           </li>
         </ul>
@@ -49,55 +52,34 @@
 <!-- Carousel & Generator-->
 
 <header>
-<div class="container">
-  <div class="container h-100">
-    <div class="row h-100 justify-content-center align-items-center text-muted py-4">
-      <div onsubmit="return generate()" class="box">
-        <h1 align="center">Generator</h1>
-        <br>
+  <div class="container">
+    <div class="container h-100">
+      <div class="row h-100 justify-content-center align-items-center text-muted py-4">
+        <div class="log-in">
+
+          <div class="row h-100 justify-content-center align-items-center text-muted py-4">
+            <form onsubmit="return generate()" class="box">
+              <h1 align="center">Welcome</h1>
+              <br>
+              <div class="container">
+                <div class="form-group"> <label for="email">User Name</label> <input type="email" class="form-control" id="email" placeholder="Enter email"> </div>
+                <div class="form-group"> <label for="pwd">Password</label> <input type="password" class="form-control" id="pwd" placeholder="Enter password"> </div>
+                <div class="checkbox"> <label><input type="checkbox"> Remember me</label> </div> <a href="generator.html" class="btn btn-block btn btn-primary btn-dark">Log In</a>
 
 
-        <label id="passLengthLabel" for="passLength">Happiness Level : 5</label>
-        <input type="range" min=0 max=10 class="form-control-range" id="passLength" oninput="return MoodLength(this.value)">
+              </div>
 
 
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="uppercaseChk"  checked>
-          <label class="form-check-label">Include Action</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="lovercaseChk"  checked>
-          <label class="form-check-label">Include Horror</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="numbersChk"  checked>
-          <label class="form-check-label">Include Drama</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="symbolsChk"  checked>
-          <label class="form-check-label">Include Adventure</label>
-        </div>
-
-        <br>
-        <div class="input-group mb-3">
-          <input id="genPass" class="form-control" type="text" placeholder="Movie Name" readonly>
-          <div class="input-group-append">
-            <button class="btn btn-primary btn-dark" type="button" id="copyButton">Watch now</button>
           </div>
-
+          <br>
 
         </div>
-        <br>
-        <input type="submit" value="Generate" class="btn btn-block btn btn-primary btn-dark">
-
-
       </div>
+
+
+
     </div>
-  </div>
 
-
-
-  </div>
 
 
 
