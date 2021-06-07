@@ -103,6 +103,11 @@ hr {
 .carouselExampleDark {
     background-color:white ;
 }
+
+.carousel {
+    padding-top: 15px;
+}
+
 .carousel-item {
     height: 26rem;
     max-width: 80rem;
