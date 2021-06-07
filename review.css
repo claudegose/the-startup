@@ -64,6 +64,15 @@ body {
     justify-content: center;
 }
 
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-content {
+}
+
 /* CARD STYLING */
 .card-body {
     color: black;
@@ -86,7 +95,9 @@ body {
     padding: 15px;
 }
 
-
+hr {
+    display: hidden;
+}
 /* SEPARATE STYLING */
 
 .carouselExampleDark {
@@ -132,5 +143,10 @@ body {
 
 }
 @media (max-width: 425px) {
-
+    .text-container {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
