@@ -7,15 +7,214 @@
     <meta name="description" content="We are a review Netflix movie generator based on mood.">
 
     <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-
-    
+    <script src="script.js"></script>
 
     <title>Moodfix</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
 
+
+
+  <!-- Nav Section -->
+  <div clas="navigation">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="logo.png" alt="MoodFix" width="150px" height="30px"> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="review.html">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="benefits.html">Benefits</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </div>
+
+
+
+
+<!-- Carousel -->
+
+
+
+
+      <img src="netheader.png" class="d-block w-100 "  height="500px" alt="...">
+    </div>
+
+
+
+
+
+  <!-- Generator -->
+
+<div class="container h-100">
+  <div class="row h-100 justify-content-center align-items-center text-muted py-4">
+    <form onsubmit="return generate()" class="box">
+      <h1 align="center">Generator</h1>
+      <br>
+
+
+        <label id="passLengthLabel" for="passLength">Happiness Level : 5</label>
+      <input type="range" min=0 max=10 class="form-control-range" id="passLength" oninput="return MoodLength(this.value)">
+
+
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="uppercaseChk"  checked>
+        <label class="form-check-label">Include Action</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="lovercaseChk"  checked>
+        <label class="form-check-label">Include Horror</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="numbersChk"  checked>
+        <label class="form-check-label">Include Drama</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="symbolsChk"  checked>
+        <label class="form-check-label">Include Adventure</label>
+      </div>
+
+      <br>
+      <div class="input-group mb-3">
+        <input id="genPass" class="form-control" type="text" placeholder="Movie Name" readonly>
+        <div class="input-group-append">
+          <button class="btn btn-primary btn-dark" type="button" id="copyButton">Watch now</button>
+        </div>
+
+
+      </div>
+      <br>
+      <input type="submit" value="Generate" class="btn btn-block btn btn-primary btn-dark">
+
+
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+  <!-- Moodies Section -->
+<div class="container pt-4">
+
+  <h1 class="display text-center text-muted my-4">Top Rated Moodies</h1>
+  <div class="row">
+
+    <div class="col-lg-3 col-md-6">
+      <div class="card" style="width: 13rem;">
+        <img src="ems.ZW1zLXByZC1hc3NldHMvbW92aWVzLzQ1ZTYyYjMzLTlmYmUtNDk4YS1hZmQzLTVlMjNiOTU5YjE5OS5qcGc=.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">David Whitmer, Oliver Cowdery and Martin Harris face ridicule and persecution when they claim to have seen angels.</p>
+          <p class="card-text" align="center">8.1/10 MDFX</p>
+          <a href="#" class="btn btn-primary btn-dark">Watch Now</a>
+        </div>
+      </div>
+    </div>
+    <div class=" col-lg-3 col-md-6">
+      <div class="card" style="width: 13rem;">
+        <img src="ems.ZW1zLXByZC1hc3NldHMvbW92aWVzL2RmYmNmNDc2LTJiZTktNDU4Ni05ODkyLTNmOGVmMzRkNzgwNi5qcGc=.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Professional skier and BASE jumper Matthias Giraud pursues his passion for adventure while also starting a family.</p>
+          <p class="card-text" align="center">7.1/10 MDFX</p>
+          <a href="#" class="btn btn-primary btn-dark">Watch Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="card" style="width: 13rem;">
+        <img src="ems.ZW1zLXByZC1hc3NldHMvbW92aWVzLzUyMjU1NTg3LWZhYWYtNGQ5ZS05N2YyLTc3YTNjYWI5NjNiYy5qcGc=.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">83 is an upcoming Indian Hindi-language biographical sports film directed by Kabir Khan and jointly produced by Khan.</p>
+          <p class="card-text" align="center">7.2/10 MDFX</p>
+          <a href="#" class="btn btn-primary btn-dark">Watch Now</a>
+        </div>
+      </div>
+    </div>
+    <div class=" col-lg-3 col-md-6">
+      <div class="card" style="width: 13rem;">
+        <img src="best.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">A woman works as a historian who specializes in the urban development of modern-day Berlin With the love.  </p>
+          <p class="card-text" align="center">6.9/10 MDFX</p>
+          <a href="#" class="btn btn-primary btn-dark">Watch Now</a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Newsletter Section -->
+<div class="row py-4 text-muted">
+  <div class="col-md">
+    <p><strong>Weekly Reviews</strong></p>
+    <p>Sign up now for weekly Top Rated Movies Tailored to your specifications directly added to your Netflix List</p>
+  </div>
+  <div class="col-md col-lg-5 ml-auto">
+<p><strong>Weekly Reviews Directly to your Netflix List</strong></p>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Email Address" aria-label="Email Address" aria-describedby="button-addon2">
+      <button class="btn btn-secondary btn-dark" type="button" id="button-addon2">Confirm</button>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+  <!-- Footer Section -->
+    <!-- Footer -->
+    <footer class="page-footer font-small unique-color-dark">
+
+
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+
+        <!-- Grid row -->
+
+      </div>
+      <!-- Footer Links -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="index.html">MoodFix Pty</a>
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   </body>
 </html>
