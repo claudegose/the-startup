@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 /*Color scheme used: #00adb5 blue  #222831 darkgrey #343a40 lighter gray */
 
 
@@ -6,6 +8,7 @@
 ul { /* what are mf revwrs section*/
     display: block;
     max-height:1250px;
+    background-color: white;
 }
 
 
@@ -14,7 +17,8 @@ ul p {
 }
 
 body {
-    background-color: #222831;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
     font-family: 'Open Sans', sans-serif ;
     text-align: center;
     font-size: 2rem;
@@ -22,25 +26,34 @@ body {
 
 
 .row {
-    background-color: #222831; 
+    background-color: white; 
 }
 
 
 .whoarewe {
-    background-color: #222831;
-    color: #00adb5;
-    opacity: 50%;
+    background-color: transparent;
+    color: #050505;
+    opacity: 70%;
     text-align: center;
 }
 
 .list-group-flush { /*spotlight stylng*/
-    color: #00adb5;
+    /*color: #00adb5; */
     text-align: center;
     position: center;
 }
 
 .card-text-profile {
     color: pink;
+}
+
+.footer {
+    color: black;
+}
+
+.list-container {
+    text-align: center;
+    position: center;
 }
 
 
@@ -71,7 +84,7 @@ body {
 /* SEPARATE STYLING */
 
 .carouselExampleDark {
-    background-color:#222831 ;
+    background-color:white ;
 }
 .carousel-item {
     height: 26rem;
