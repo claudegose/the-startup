@@ -3,11 +3,12 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-image: url("netheader.png")
 }
 
 
 header {
-    background-image:url('netheader.png');
+    background-image:url('netheader2.jpg');
     background-repeat: repeat-x;
     height: 500px;
 }
@@ -18,25 +19,18 @@ header {
 .box {
     background: white;
     opacity: 90%;
-    margin-top: 20px;
-    -webkit-box-shadow: -1px 8px 15px 8px rgba(0,0,0,0.44);
-    -moz-box-shadow: -1px 8px 15px 8px rgba(0,0,0,0.44);
-    box-shadow: -1px 8px 15px 8px rgba(0,0,0,0.44);
+    margin-top: 150px;
 }
 
 
 
 
 .footer-copyright1 {
+    color: white;
+    position: relative;
 }
 
 
-
-
-
-h1 {
-    ;
-}
 
 .box {
     padding: 20px;
