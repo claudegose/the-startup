@@ -1,14 +1,111 @@
 /*Color scheme used: #00adb5 blue  #222831 darkgrey #343a40 lighter gray */
 
-body {
-    display: flex;
-    justify-self: center;
+
+/*GENERAL PAGE STYLING */
+
+ul { /* what are mf revwrs section*/
+    display: block;
+    max-height:1250px;
 }
+
+
+ul p {
+    font-size: 0.8rem;
+}
+
+body {
+    background-color: #222831;
+    font-family: 'Open Sans', sans-serif ;
+    text-align: center;
+    font-size: 2rem;
+}
+
 
 .row {
-    background-color: #222831; /*grey suggested by Ewelyna*/
+    background-color: #222831; 
 }
 
-.col-sm-12 { /*Header and Footer*/
-    background-color: #343a40; /*about the same grey as navbar according GIMP*/ 
+
+.whoarewe {
+    background-color: #222831;
+    color: #00adb5;
+    opacity: 50%;
+    text-align: center;
+}
+
+.list-group-flush { /*spotlight stylng*/
+    color: #00adb5;
+    text-align: center;
+    position: center;
+}
+
+.card-text-profile {
+    color: pink;
+}
+
+
+
+/* CARD STYLING */
+.card-body {
+    color: black;
+    position: center;
+}
+.card-body p {
+    font-size: 0.95rem;
+    opacity: 100%;
+}
+
+.card {
+    text-align: center;
+    background-color: transparent;
+}
+
+.rounded-circle {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    padding: 15px;
+}
+
+
+/* SEPARATE STYLING */
+
+.carouselExampleDark {
+    background-color:#222831 ;
+}
+.carousel-item {
+    height: 26rem;
+    max-width: 80rem;
+    background-color: #222831;
+    color: #eeeeee;
+    margin: auto;
+}
+
+.carousel-item img {
+    height: 100%;
+}
+
+.carousel-indicators-button {
+    padding-right: 3%;
+    margin: 1%;
+    border: none;
+    opacity: 30%;
+}
+
+.car-button {
+    background-color: transparent;
+    border: none;
+}
+
+
+
+/*RESPONSIVENESS */
+
+@media (max-width: 1024px) {
+
+@media (max-width: 768px) {
+
+}
+@media (max-width: 425px) {
+
 }
