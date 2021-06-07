@@ -17,11 +17,38 @@
     <title>Moodfix</title>
   </head>
   <body>
-    <header>
-        <img class="logo" src="images/logo.gif" alt="Logo">
-    </header>
+  <div clas="navigation">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+              <a class="navbar-brand" href="index.html"><img src="logo.png" alt="MoodFix" width="150px" height="30px"> </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="review.html">Reviews</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="benefits.html">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="generator.html">Watch now</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="loginform.html">Log in</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </div>
+
     <main class="benefits">
-        <section id="container-carousel">
+        <div id="container-carousel">
         <div id="carouselExampleCaptions" class="carousel carousel-fade" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -43,7 +70,7 @@
                     <div class="carousel-caption benefit-text">
                         <h5 class="carousel-header">Let the mood decide</h5>
                         <p class="carousel-p">Let our high spec search engine find the right film for your current mood.</p>
-                        <a href="index.html" class="btn btn-lg btn-light">Find!</a>
+                        <a href="generator.html" class="btn btn-lg btn-light">Find!</a>
 
                     </div>
                 </div>
@@ -71,9 +98,9 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
             </button>
         </div>
-        </section>
+        </div>
         <hr>
-        <section id="container-signup">
+        <div id="container-signup">
                 <div class="signup">
                 <h5 class="signup-header">Sign up today to receive a 10% discount on Netflix for a full year!</h5>
                 <form action="#" class="signup-form">
@@ -90,7 +117,7 @@
                         <input type="password" class="col-4" id="inputPassword3">
                     </div>
                     <div class="row mb-3 signup-row justify-content-center">
-                        <div class="col-4">
+                        <div class="col">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="gridCheck1">
                                 <label class="form-check-label" for="gridCheck1">
@@ -99,13 +126,13 @@
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-lg btn-light">Submit</button>
-                <p class="signup-p">Already a member? <a href="#">Log in</a></p>
+                    <button type="submit" class="btn btn-lg btn-outline-dark">Submit</button>
+                <p class="signup-p">Already a member? <a href="index.html">Log in</a></p>
             </form>
             </div>
-        </section>
+        </div>
         <hr>
-        <section id="container-newsletter">
+        <div id="container-newsletter">
             <div class="newsletter">
                 <p class="newsletter-p">Not ready to create an account yet?</p>
                 <h5 class="newsletter-header">Sign up for our newsletter and discover how can we improve your movie night experience. With our help you will learn that choosing a movie doesn't have to be complicated.</h5>
@@ -113,23 +140,26 @@
                     <div class="row col newsletter-row justify-content-center">
                         <label for="inputEmail4" class="col-3 col-form-label form-field-newsletter">Email</label>
                         <input type="email" class="col-4 form-control" id="inputEmail4">
-                        <button type="submit" class="col-auto btn btn-md btn-light btn-newsletter">Submit</button>
+                        <button type="submit" class="col-auto btn btn-md btn-outline-dark btn-newsletter">Submit</button>
                     </div>
                 </form>
             </div>
-        </section>
+        </div>
         <hr>
-        <section id="container-about">
-            <div class="row col about justify-content-center">
-                <div class="card col-3 col-sm-12 card-style">
+        <div id="container-about">
+            <div class="row about justify-content-center">
+                <div class="col-lg-4 about-cards">
+                <div class="card card-style h-100">
                     <img src="images/claude.jpg" class="card-img-top about-img" alt="Claude">
                     <div class="card-body">
                         <h5 class="about-header">Claude Gosee</h5>
                         <p class="card-text about-p-title">Chief Executive Officer</p>
-                        <p class="card-text about-p">With endless business ideas, CEO, Claude Gosse brings constant innovation and new upgrades to the business, making sure we are the best on the market.</p>
+                        <p class="card-text about-p">With endless business ideas, CEO, Claude Gosse brings constant innovation and new upgrades to the business, making sure we are always ahead of the competition.</p>
                     </div>
                 </div>
-                <div class="card col-3 col-sm-12 card-style">
+                </div>
+                <div class="col-lg-4 about-cards">
+                <div class="card card-style h-100">
                     <img src="images/dennis.jpg" class="card-img-top about-img" alt="Dennis">
                     <div class="card-body">
                         <h5 class="about-header">Dennis van Nieuwenhuyse</h5>
@@ -137,7 +167,9 @@
                         <p class="card-text about-p">Always positive, our CTO, Dennis van Nieuwenhuyse makes sure our tools are running smooth and fast, guaranteeing customer satisfaction.</p>
                     </div>
                 </div>
-                <div class="card col-3 col-sm-12 card-style">
+                </div>
+                <div class="col-lg-4 about-cards">
+                <div class="card card-style h-100">
                     <img src="images/ewelina.png" class="card-img-top about-img" alt="Ewelina">
                     <div class="card-body">
                         <h5 class="about-header">Ewelina Kosciukiewicz</h5>
@@ -145,12 +177,14 @@
                         <p class="card-text about-p">Experienced in start-up environment, CFO - Ewelina Kosciukiewicz, makes sure that business stays financially stable in the fast-growth environment.</p>
                     </div>
                 </div>
+                </div>
             </div>
-        </section>
+        </div>
         <hr>
-        <section id="container-contact">
+        <div id="container-contact">
             <div class="row">
-                <div class="col-5 address">
+                <div class="col-lg-5">
+                <div class="address">
                     <address>
                         <span class="contact">Contact us:</span>
                         AA Tower
@@ -161,12 +195,38 @@
                         📧 info@moodfix.com
                     </address>
                 </div>
-                <div class="col-7 map">
+                </div>
+                <div class="col-lg-7">
+                <div class="map">
                     <iframe width="600" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=AA%20Tower%20Technologiepark-Zwijnaarde%20122,%209052%20Gent&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                 </div>
+                </div>
             </div>
-        </section>
+        </div>
         <hr>
     </main>
+  <footer class="page-footer font-small unique-color-dark">
+
+
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+
+      <!-- Grid row -->
+
+      </div>
+      <!-- Footer Links -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+          <a href="index.html">MoodFix Pty</a>
+      </div>
+      <!-- Copyright -->
+
+  </footer>
   </body>
 </html>
