@@ -7,8 +7,6 @@
 
 ul { /* what are mf revwrs section*/
     display: block;
-    max-height:1250px;
-    background-color: white;
 }
 
 
@@ -22,6 +20,7 @@ body {
     font-family: 'Open Sans', sans-serif ;
     text-align: center;
     font-size: 2rem;
+    min-height: 100vh;
 }
 
 
@@ -37,6 +36,14 @@ body {
     text-align: center;
 }
 
+.test-wrapper {
+    display: block;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    color: black;
+}
+
 .list-group-flush { /*spotlight stylng*/
     /*color: #00adb5; */
     text-align: center;
@@ -47,16 +54,15 @@ body {
     color: pink;
 }
 
-.footer {
-    color: black;
-}
-
 .list-container {
     text-align: center;
     position: center;
 }
 
-
+.carousel {
+    display: flex;
+    justify-content: center;
+}
 
 /* CARD STYLING */
 .card-body {
@@ -110,7 +116,13 @@ body {
     border: none;
 }
 
-
+.footer-container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    color: black;
+    z-index: 100;
+} 
 
 /*RESPONSIVENESS */
 
