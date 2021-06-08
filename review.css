@@ -1,14 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
-/*Color scheme used: #00adb5 blue  #222831 darkgrey #343a40 lighter gray */
-
-
 /*GENERAL PAGE STYLING */
-
-ul { /* what are mf revwrs section*/
+ul { 
     display: block;
 }
-
 
 ul p {
     font-size: 0.8rem;
@@ -23,11 +17,9 @@ body {
     min-height: 100vh;
 }
 
-
 .row {
     background-color: white; 
 }
-
 
 .whoarewe {
     background-color: transparent;
@@ -45,7 +37,6 @@ body {
 }
 
 .list-group-flush { /*spotlight stylng*/
-    /*color: #00adb5; */
     text-align: center;
     position: center;
 }
@@ -90,8 +81,8 @@ body {
 
 .rounded-circle {
     margin: 0 auto; /* Added */
-    float: none; /* Added */
-    margin-bottom: 10px; /* Added */
+    float: none; 
+    margin-bottom: 10px; 
     padding: 15px;
 }
 
@@ -142,11 +133,6 @@ hr {
 
 /*RESPONSIVENESS */
 
-@media (max-width: 1024px) {
-
-@media (max-width: 768px) {
-
-}
 @media (max-width: 425px) {
     .text-container {
         flex-direction: column;
