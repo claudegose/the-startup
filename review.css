@@ -140,3 +140,34 @@ hr {
         align-items: center;
     }
 }
+
+@media (max-width: 770px) {
+    .text-container {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+}
+
+@media (max-width: 992px) {
+    .text-container {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+}
+
+@media (max-width: 1024px) {
+    .text-container {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+}
+
