@@ -4,14 +4,20 @@ ul {
 }
 
 ul p {
-    font-size: 1.1rem;
+    font-size: 15px;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    font-family: 'Open Sans', sans-serif ;
     text-align: center;
     font-size: 2rem;
     min-height: 100vh;
+}
+
+.row {
+    background-color: white; 
 }
 
 .whoarewe {
@@ -19,6 +25,14 @@ body {
     color: #050505;
     opacity: 70%;
     text-align: center;
+}
+
+.test-wrapper {
+    display: block;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    color: black;
 }
 
 .list-group-flush { /*spotlight stylng*/
@@ -46,12 +60,14 @@ body {
     align-items: center;
 }
 
+.text-content {
+}
+
 /* CARD STYLING */
 .card-body {
     color: black;
     position: center;
 }
-
 .card-body p {
     font-size: 0.95rem;
     opacity: 100%;
@@ -68,7 +84,12 @@ body {
     margin-bottom: 10px; 
     padding: 15px;
 }
+
+hr {
+    display: hidden;
+}
 /* SEPARATE STYLING */
+
 .carouselExampleDark {
     background-color:white ;
 }
@@ -106,6 +127,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     color: black;
+    z-index: 100;
 } 
 
 /*RESPONSIVENESS */
