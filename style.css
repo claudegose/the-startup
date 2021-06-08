@@ -12,7 +12,11 @@ header {
     height: 500px;
 }
 
+.footer {
 
+    margin-top: 10px;
+    padding-top: 20px;
+}
 
 
 .box {
