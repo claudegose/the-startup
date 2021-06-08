@@ -1,19 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
-/*Color scheme used: #00adb5 blue  #222831 darkgrey #343a40 lighter gray */
-
-
-/*GENERAL PAGE STYLING */
-
-ul { /* what are mf revwrs section*/
+ul { 
     display: block;
-    max-height:1250px;
-    background-color: white;
 }
 
-
 ul p {
-    font-size: 0.8rem;
+    font-size: 15px;
 }
 
 body {
@@ -22,13 +13,12 @@ body {
     font-family: 'Open Sans', sans-serif ;
     text-align: center;
     font-size: 2rem;
+    min-height: 100vh;
 }
-
 
 .row {
     background-color: white; 
 }
-
 
 .whoarewe {
     background-color: transparent;
@@ -37,8 +27,15 @@ body {
     text-align: center;
 }
 
+.test-wrapper {
+    display: block;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    color: black;
+}
+
 .list-group-flush { /*spotlight stylng*/
-    /*color: #00adb5; */
     text-align: center;
     position: center;
 }
@@ -47,16 +44,24 @@ body {
     color: pink;
 }
 
-.footer {
-    color: black;
-}
-
 .list-container {
     text-align: center;
     position: center;
 }
 
+.carousel {
+    display: flex;
+    justify-content: center;
+}
 
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-content {
+}
 
 /* CARD STYLING */
 .card-body {
@@ -74,18 +79,25 @@ body {
 }
 
 .rounded-circle {
-    margin: 0 auto; /* Added */
-    float: none; /* Added */
-    margin-bottom: 10px; /* Added */
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 10px; 
     padding: 15px;
 }
 
-
+hr {
+    display: hidden;
+}
 /* SEPARATE STYLING */
 
 .carouselExampleDark {
     background-color:white ;
 }
+
+.carousel {
+    padding-top: 15px;
+}
+
 .carousel-item {
     height: 26rem;
     max-width: 80rem;
@@ -110,15 +122,21 @@ body {
     border: none;
 }
 
-
+.footer-container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    color: black;
+    z-index: 100;
+} 
 
 /*RESPONSIVENESS */
 
-@media (max-width: 1024px) {
-
-@media (max-width: 768px) {
-
-}
 @media (max-width: 425px) {
-
+    .text-container {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
