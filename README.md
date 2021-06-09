@@ -1,5 +1,5 @@
 # the-startup
-Find the site here : https://dennisvn.github.io/the-startup/
+Find the site here : https://claudegose.github.io/the-startup/
 
 This is a 3 person group project with main focus on consolidation. We created a fictional startup called MOODFIX. Each member created a page.
 
